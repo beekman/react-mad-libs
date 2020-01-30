@@ -21,8 +21,29 @@ export default class Madlib extends Component {
       '10': '',
       '11': ''
     }
+
   };
 
+  resetForm = () => {
+    this.setState({
+      showResult: false,
+      words: [],
+      inputs: {
+        '0': '',
+        '1': '',
+        '2': '',
+        '3': '',
+        '4': '',
+        '5': '',
+        '6': '',
+        '7': '',
+        '8': '',
+        '9': '',
+        '10': '',
+        '11': ''
+      }
+    });
+  };
   toggleResult = () =>
     this.setState(state => ({ ...state, showResult: !state.showResult }));
 
@@ -62,7 +83,7 @@ export default class Madlib extends Component {
     return (
       <>
         <div className={ styles.mad }>
-          { !showResult && <Form onSubmit={ this.handleSubmit } onChange={ this.handleChange } /> }
+          { !showResult && <Form onSubmit={ this.handleSubmit } onChange={ this.handleChange } onReset={ this.resetForm } inputs={this.state.inputs} /> }
           { showResult && <Result words={ words } closeResult={ this.toggleResult } /> }
         </div>
       </>
