@@ -5,7 +5,7 @@ export default class Footer extends Component {
     return (
       <footer className={ styles.Footer }>
         <section className={ styles.about }>
-          This MadLibs project was created by Ben Beekman.
+          This silly little React webapp was created by <a href="https://benbeekman.com">Ben Beekman</a>.
         </section>
       </footer>
     );

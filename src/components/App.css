@@ -1,5 +1,6 @@
 .Header {
-    background-color: rgb(249, 208, 64);
+    background-color: #6EBDCA;
+
     padding: 1rem;
     font-size: 1.5rem;
     display: flex;
@@ -9,6 +10,42 @@
     h1 {
         margin: 0;
         padding: 0;
+        color: #F9D040;
+        text-shadow: -4px -1px 6px #FFA45D;
+    }
+
+
+}
+
+
+.mad {
+    background-color: RGB(173, 224, 147);
+    padding: 10px 0;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+
+
+    input[type="text"] {
+        background-color: #FE6986;
+        margin: 0.125rem 0.25rem;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 2px 5px;
+        text-align: center;
+        color: white;
+    }
+
+    button {
+        font-size: 24px;
+        min-width: 200px;
+        padding: 0.5rem;
+        display: block;
+        margin: 10px auto;
+        border-radius: 10px;
+        background: #F9D040;
+        border: #FFA45D 5px solid;
+        box-shadow: 0px 2px 10px 8px #F9D040;
     }
 }
 
@@ -20,20 +57,10 @@
 
     .about {
         text-align: center;
+    }
 
-        a {
-            display: inline-block;
-            border-bottom: 0.1rem solid rgb(255, 152, 0);
-            color: rgb(245, 245, 245);
-
-            font-weight: 600;
-            text-decoration: none;
-            transition: 0.2s ease 0s;
-
-            &:hover {
-                border-bottom: 0.1rem solid rgb(245, 245, 245);
-                color: rgb(255, 152, 0);
-            }
-        }
+    a {
+        text-decoration: none;
+        color: #FFA45D;
     }
 }

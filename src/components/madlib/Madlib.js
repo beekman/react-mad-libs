@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import styles from '../App.css';
+import styles from '../App.css';
 import Form from './Form';
 import Result from './Result';
 
@@ -58,11 +58,13 @@ export default class Madlib extends Component {
   };
 
   render() {
-    const { showResult } = this.state;
+    const { showResult, words } = this.state;
     return (
       <>
-        { !showResult && <Form onSubmit={ this.handleSubmit } onChange={ this.handleChange } /> }
-        { showResult && <Result words={ this.state.words } closeResult={ this.toggleResult } /> }
+        <div className={ styles.mad }>
+          { !showResult && <Form onSubmit={ this.handleSubmit } onChange={ this.handleChange } /> }
+          { showResult && <Result words={ words } closeResult={ this.toggleResult } /> }
+        </div>
       </>
     );
   }
