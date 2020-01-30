@@ -13,10 +13,7 @@
         color: #F9D040;
         text-shadow: -4px -1px 6px #FFA45D;
     }
-
-
 }
-
 
 .mad {
     background-color: RGB(173, 224, 147);
@@ -44,7 +41,7 @@
         margin: 10px auto;
         border-radius: 10px;
         background: #F9D040;
-        border: #FFA45D 5px solid;
+        border: rgb(214, 115, 40) 5px solid;
         box-shadow: 0px 2px 10px 8px #F9D040;
     }
 }
