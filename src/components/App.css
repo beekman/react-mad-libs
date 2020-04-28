@@ -1,0 +1,63 @@
+.Header {
+	background-color: #6EBDCA;
+
+	padding: 1rem;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		margin: 0;
+		padding: 0;
+		color: #F9D040;
+		text-shadow: -4px -1px 6px #FFA45D;
+	}
+}
+
+.mad {
+	background-color: RGB(173, 224, 147);
+	padding: 10px 0;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+
+
+	input[type="text"] {
+		background-color: #FE6986;
+		margin: 0.125rem 0.25rem;
+		font-weight: bold;
+		font-size: 18px;
+		padding: 2px 5px;
+		text-align: center;
+		color: white;
+	}
+
+	button {
+		font-size: 24px;
+		min-width: 200px;
+		padding: 0.5rem;
+		display: block;
+		margin: 10px auto;
+		border-radius: 10px;
+		background: #F9D040;
+		border: rgb(214, 115, 40) 5px solid;
+		box-shadow: 0px 2px 10px 8px #F9D040;
+	}
+}
+
+
+.Footer {
+	background-color: RGB(110, 189, 202);
+	padding: 1rem;
+	font-size: 0.8rem;
+
+	.about {
+		text-align: center;
+	}
+
+	a {
+		text-decoration: none;
+		color: #FFA45D;
+	}
+}
